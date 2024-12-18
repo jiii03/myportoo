@@ -623,7 +623,7 @@ a:hover {
 }
 
 .intro .intro-title {
-  color: #fff;
+  color: #0078ff;
   font-weight: 600;
   font-size: 3rem;
 }
@@ -689,7 +689,7 @@ a:hover {
 }
 
 .skill-mf .progress {
-  background-color: #cde1f8;
+  background-color: #0078ff;
   margin: .5rem 0 1.2rem 0;
   border-radius: 0;
   height: .7rem;
@@ -700,22 +700,107 @@ a:hover {
   background-color: #0078ff;
 }
 
+.technical-level {
+  text-align: center;
+  margin: 40px 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+.technical-level h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #0078ff;
+
+.container {
+  margin: 25px auto;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color:#ffffff;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 123, 255, 0.4);
+}
+
+.card h3 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #0078ff;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.card li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  font-size: 1rem;
+}
+
+.card li strong {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.card li strong:hover {
+  color: #0078ff;
+  text-decoration: underline;
+}
+
+.card li span {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+/* Responsif untuk perangkat mobile */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .card {
+      width: 90%;
+  }
+}
+
 /*======================================
 //--//-->   SERVICES
 ======================================*/
 
 .service-box {
   background-color: #fff;
+  text-color: #fff;
+  box-shadow: 0 4px 8px #0078ff;
   padding: 2.5rem 1.3rem;
   border-radius: 1rem;
   margin-bottom: 3rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .service-box:hover .ico-circle {
   transition: all 500ms ease;
   color: #fff;
   background-color: #0078ff;
-  box-shadow: 0 0 0 10px #cde1f8;
+  box-shadow: 0 10px 20px rgba(243, 244, 244, 0.4);
 }
 
 .service-box .service-ico {
@@ -729,6 +814,7 @@ a:hover {
 }
 
 .service-box .s-title {
+  text-color:#fff;
   font-size: 1.4rem;
   text-transform: uppercase;
   text-align: center;
